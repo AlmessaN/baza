@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>База ПЦУ</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="code.js"></script>
+</head>
+<body>
+    <div class="container">
+        <button id="loginButton">Увійти в базу ПЦУ</button>
+        <div id="loginForm" class="hidden">
+            <h2>Вхід</h2>
+            <input type="text" id="username" placeholder="Логін">
+            <input type="password" id="password" placeholder="Пароль">
+            <button id="submitLogin">Увійти</button>
+        </div>
+        <div id="databaseStructure" class="hidden">
+            <h2>Структура бази даних ПЦУ</h2>
+            <button class="structureButton" onclick="location.href='eparchies.html'">Єпархії</button>
+            <button class="structureButton" onclick="location.href='clergy.html'">Духовенство</button>
+            <button class="structureButton" onclick="location.href='synodal_departments.html'">Синодальні відділи</button>
+        </div>
+    </div>
+</body>
+</html>
